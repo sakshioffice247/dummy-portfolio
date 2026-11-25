@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Byungjin Park · DevOps Engineer &amp; Software Architect</title>
+<meta name="description" content="Portfolio of Byungjin Park, a DevOps / SRE leader and software architect with 15+ years of experience in Seoul, Korea.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important}#loader{display:none}</style></noscript>
+</head>
+<body>
+<!-- Loader -->
+<div id="loader" aria-hidden="true"><div class="ld-ring"></div><p class="ld-text mono">$ booting portfolio<span class="caret">_</span></p></div>
+<div id="progress"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="glow g1" aria-hidden="true"></div><div class="glow g2" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Navigation -->
+<header class="nav" id="nav">
+  <a href="#home" class="logo" aria-label="Byungjin Park, home">BP<span>.</span></a>
+  <nav id="menu" aria-label="Primary">
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a>
+    <a href="#credentials">Credentials</a><a href="#awards">Awards</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    <span class="indicator" aria-hidden="true"></span>
+  </nav>
+  <div class="nav-actions">
+    <button id="theme" class="icon-btn" aria-label="Switch to light theme" title="Toggle theme"><span class="sun">☀</span><span class="moon">☾</span></button>
+    <button id="burger" class="icon-btn burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<main id="main">
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <p class="pill reveal"><span class="dot"></span> Career sabbatical · open to high-impact start-up roles</p>
+    <h1 class="split" aria-label="Byungjin Park">Byungjin Park</h1>
+    <p class="role reveal"><span id="typed"></span><span class="caret">|</span></p>
+    <p class="lead reveal">Seasoned SRE/DevOps leader with 15+ years of hands-on engineering across service architecture, DevOps &amp; SRE practices, infrastructure operations and security engineering. Founding member and lead engineer at two fintech companies.</p>
+    <div class="cta reveal">
+      <a href="#experience" class="btn primary magnetic">View experience</a>
+      <a href="#contact" class="btn ghost magnetic">Get in touch</a>
+    </div>
+    <p class="quote reveal">“Be the change that you want to see in the world.”</p>
+  </div>
+  <div class="term glass reveal" aria-label="Terminal summary of profile">
+    <div class="term-bar"><i></i><i></i><i></i><span class="mono">zsh · tmux · neovim</span></div>
+    <pre class="mono" id="term"><span class="c">$</span> whoami
+Byungjin Park
+<span class="c">$</span> location
+Mapo-gu, Seoul, Republic of Korea
+<span class="c">$</span> stack --core
+AWS multi-account · Kubernetes · Terraform
+GitOps (ArgoCD, Kustomize) · Okta SSO
+<span class="c">$</span> status
+On sabbatical, family first. Exploring
+Claude Code-powered AI workflows.<span class="caret">_</span></pre>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="sec">
+  <h2 class="title reveal">About me</h2>
+  <div class="about-grid">
+    <div class="reveal">
+      <p>I'm a seasoned SRE/DevOps leader currently on a career sabbatical, cherishing family moments while seeking high-impact opportunities in fast-growing start-up companies.</p>
+      <p>Over 15+ years of hands-on software engineering I've specialized in service architecture, DevOps &amp; SRE practices, infrastructure operations and security engineering, scaling infrastructure teams as lead engineer and founding member at two fintech companies.</p>
+      <p>I've also delivered technical advisory and consulting for DeFi, AI and B2B SaaS start-ups, optimizing cloud-native architectures (AWS multi-account, Kubernetes, Terraform) for reliability and scalability.</p>
+      <p>I'm passionate about contributing to open-source projects and tech communities by sharing knowledge and experience. I'm a big fan of terminal-centric workflows on macOS with zsh, Tmux, NeoVim and chezmoi, relentlessly optimizing my setup and experimenting with Claude Code-powered AI workflows to tackle complex challenges faster.</p>
+    </div>
+    <div class="stats">
+      <div class="stat glass tilt reveal"><b data-count="15" data-suffix="+">0</b><span>years of software engineering</span></div>
+      <div class="stat glass tilt reveal"><b data-count="3.6" data-dec="1" data-suffix="M">0</b><span>users on the KarrotPay infrastructure</span></div>
+      <div class="stat glass tilt reveal"><b data-count="30" data-suffix="%+">0</b><span>AWS cost saved at KarrotPay</span></div>
+      <div class="stat glass tilt reveal"><b data-count="90" data-suffix="%+">0</b><span>of AWS resources managed via Terraform modules</span></div>
+      <div class="stat glass tilt reveal"><b data-count="6" >0</b><span>DEFCON CTF World Finals</span></div>
+      <div class="stat glass tilt reveal"><b data-count="9">0</b><span>industry certifications</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="sec">
+  <h2 class="title reveal">Experience &amp; flagship work</h2>
+  <p class="sub reveal">Select a role to expand its responsibilities and achievements.</p>
+  <ol class="timeline">
+    <li class="job reveal">
+      <button class="job-head" aria-expanded="true"><span class="when mono">Sep. 2023 – Mar. 2024</span><strong>DevOps Engineer</strong><em>Dunamu Inc. · Seoul</em><span class="chev" aria-hidden="true"></span></button>
+      <div class="job-body open"><ul>
+        <li>Led service mesh research and implementation across enterprise cross-cluster environments, evaluating Istio, Cilium, Kuma, Consul and AWS VPC Lattice for enhanced security and scalability.</li>
+        <li>Designed Terraform modules to manage and scale infrastructure across dozens of AWS accounts, enabling standardized, repeatable deployments.</li></ul></div>
+    </li>
+    <li class="job featured reveal">
+      <button class="job-head" aria-expanded="true"><span class="when mono">Mar. 2021 – Jun. 2023</span><strong>Founding Member, SRE &amp; Infrastructure Team Lead</strong><em>Danggeun Pay Inc. (KarrotPay) · Seoul</em><span class="chev" aria-hidden="true"></span></button>
+      <div class="job-body open"><ul>
+        <li>Designed and provisioned the entire AWS infrastructure to meet security compliance and acquire a financial-services business license in Korea, then continuously improved the architecture as the service grew to 3.6 million users.</li>
+        <li>Established a standardized base for declarative management of infrastructure and deployments: over 90% of AWS resources ran on standardized Terraform modules, and all Kubernetes add-ons and workloads were managed GitOps-style with Kustomize and ArgoCD.</li>
+        <li>Saved over 30% of overall AWS costs through a quarterly purchasing strategy for Reserved Instances and Savings Plans, plus the introduction of Graviton instances.</li>
+        <li>Built a core architecture regulating outbound DNS traffic across multi-account, multi-VPC environments with AWS Route 53 DNS Firewall and FMS, significantly raising security confidence in the financial sector's segregated environment.</li>
+        <li>Introduced Okta as the company's employee identity solution: set security policies and configured SSO for 20+ enterprise systems including AWS, GitHub, Slack and Google Workspace, using a Hub and Spoke design that enables a collaborative account structure with parent company Daangn Market.</li></ul>
+        <div class="tags"><span>AWS</span><span>Terraform</span><span>Kubernetes</span><span>ArgoCD</span><span>Kustomize</span><span>Okta</span><span>Route 53 DNS Firewall</span></div></div>
+    </li>
+    <li class="job reveal">
+      <button class="job-head" aria-expanded="false"><span class="when mono">Feb. 2021 – Mar. 2021</span><strong>Site Reliability Engineer</strong><em>Danggeun Market Inc. · Seoul</em><span class="chev" aria-hidden="true"></span></button>
+      <div class="job-body"><ul><li>Site Reliability Engineer at Danggeun Market Inc., the parent company of Danggeun Pay (KarrotPay).</li></ul></div>
+    </li>
+    <li class="job featured reveal">
+      <button class="job-head" aria-expanded="false"><span class="when mono">Jun. 2018 – Jan. 2021</span><strong>Founding Member &amp; Director of Infrastructure Division</strong><em>Kasa · Seoul</em><span class="chev" aria-hidden="true"></span></button>
+      <div class="job-body"><ul>
+        <li>Designed an on-boarding process that helps new infrastructure engineers focus on the right tasks and sets expectations for success.</li>
+        <li>Migrated orchestration from DC/OS to Kubernetes on AWS EKS, managing 3 clusters and 300+ pods declaratively with Kustomize and ArgoCD.</li>
+        <li>Designed complex AWS networking with 4 VPCs and 100+ subnets, separating development and operation networks per financial regulations. Built dedicated Direct Connect links with IPsec VPN to partners' on-premise networks and provisioned OpenVPN servers with LDAP integration.</li>
+        <li>Provisioned an observability system with Kafka and the Elastic Stack (Filebeat, Heartbeat, APM Server, Logstash, Elasticsearch, Kibana); a 9-node ES cluster processed over 1 billion documents per month. Wrote a Terraform module to provision ES clusters on EC2.</li>
+        <li>Provisioned a monitoring system with Kafka, Telegraf, InfluxDB and Grafana, with a Terraform module for highly available InfluxDB on EC2.</li>
+        <li>Introduced Kong API Gateway, managed declaratively with Terraform and Atlantis for collaboration and audited change history.</li>
+        <li>Provisioned an OpenLDAP directory service for employee identity with HA via multi-master replication.</li>
+        <li>Implemented Kafka-consuming worker microservices for email, SMS, KakaoTalk and Slack notifications, with an in-house framework offering retry on failure, DLQ and event routing.</li>
+        <li>Introduced Elastic APM for distributed tracing, troubleshooting and performance testing in a microservice architecture.</li></ul>
+        <div class="tags"><span>EKS</span><span>Kafka</span><span>Elastic Stack</span><span>InfluxDB</span><span>Kong</span><span>Direct Connect</span><span>OpenLDAP</span></div></div>
+    </li>
+    <li class="job reveal">
+      <button class="job-head" aria-expanded="false"><span class="when mono">Jun. 2017 – May 2018</span><strong>Software Architect</strong><em>Omnious. Co., Ltd. · Seoul</em><span class="chev" aria-hidden="true"></span></button>
+      <div class="job-body"><ul>
+        <li>Provisioned an easily manageable hybrid infrastructure (AWS + on-premise) with Ansible, Packer and Terraform.</li>
+        <li>Built fully automated CI/CD pipelines on CircleCI for containerized apps using Docker, AWS ECR and Rancher.</li>
+        <li>Designed the service architecture and pipelines of a machine-learning Fashion Tagging API SaaS product built on microservices.</li>
+        <li>Implemented API microservices in Node.js Koa and serverless AWS Lambda.</li>
+        <li>Deployed centralized logging (ELK, Filebeat, CloudWatch, S3) and monitoring (Grafana, InfluxDB, CollectD) covering containers and AWS resources.</li></ul></div>
+    </li>
+    <li class="job reveal">
+      <button class="job-head" aria-expanded="false"><span class="when mono">Jan. 2016 – Jun. 2017</span><strong>Co-founder &amp; Software Engineer</strong><em>PLAT Corp. · Seoul</em><span class="chev" aria-hidden="true"></span></button>
+      <div class="job-body"><ul>
+        <li>Implemented the RESTful API server for the CARPLAT car rental booking app (Google Play).</li>
+        <li>Built and deployed the service infrastructure with Docker, CircleCI and AWS (EC2, ECS, Route 53, S3, CloudFront, RDS, ElastiCache, IAM), focused on high availability, fault tolerance and auto-scaling.</li>
+        <li>Developed an easy-to-use payment module connecting to major Korean payment gateway companies.</li></ul></div>
+    </li>
+    <li class="job reveal">
+      <button class="job-head" aria-expanded="false"><span class="when mono">Aug. 2014 – Apr. 2016</span><strong>Software Engineer &amp; Security Researcher</strong><em>R.O.K Cyber Command, MND · Seoul (compulsory military service)</em><span class="chev" aria-hidden="true"></span></button>
+      <div class="job-body"><ul><li>Lead engineer on an agent-less backtracking system that discovers a client device's fingerprint, including public and private IP, independently of proxy, VPN and NAT.</li></ul></div>
+    </li>
+    <li class="job reveal">
+      <button class="job-head" aria-expanded="false"><span class="when mono">Dec. 2011 – Feb. 2012</span><strong>Software Engineer</strong><em>ShitOne Corp. · Seoul</em><span class="chev" aria-hidden="true"></span></button>
+      <div class="job-body"><ul>
+        <li>Developed a proxy-drive smartphone application connecting proxy drivers and customers.</li>
+        <li>Implemented the Android application logic and the API server for the community service, alongside the lead engineer who designed the bidding protocol on raw sockets and its API server.</li></ul></div>
+    </li>
+  </ol>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="sec">
+  <h2 class="title reveal">Skills &amp; technologies</h2>
+  <p class="sub reveal">Every tool listed here appears in my work history, certifications or personal workflow.</p>
+  <div class="skills">
+    <article class="skill glass tilt reveal"><h3>Cloud &amp; networking</h3><div class="tags"><span>AWS</span><span>EKS</span><span>ECS</span><span>Route 53</span><span>VPC Lattice</span><span>Direct Connect</span><span>IPsec VPN</span><span>CloudFront</span><span>Lambda</span><span>RDS</span><span>ElastiCache</span></div></article>
+    <article class="skill glass tilt reveal"><h3>Infrastructure as code &amp; GitOps</h3><div class="tags"><span>Terraform</span><span>Atlantis</span><span>Ansible</span><span>Packer</span><span>Kustomize</span><span>ArgoCD</span></div></article>
+    <article class="skill glass tilt reveal"><h3>Containers &amp; service mesh</h3><div class="tags"><span>Kubernetes</span><span>Docker</span><span>Rancher</span><span>DC/OS</span><span>Istio</span><span>Cilium</span><span>Kuma</span><span>Consul</span></div></article>
+    <article class="skill glass tilt reveal"><h3>Observability &amp; data</h3><div class="tags"><span>Elastic Stack</span><span>Elastic APM</span><span>Kafka</span><span>InfluxDB</span><span>Telegraf</span><span>Grafana</span><span>CollectD</span><span>CloudWatch</span></div></article>
+    <article class="skill glass tilt reveal"><h3>Security &amp; identity</h3><div class="tags"><span>Okta SSO</span><span>OpenLDAP</span><span>OpenVPN</span><span>Route 53 DNS Firewall</span><span>AWS FMS</span><span>CTF / security research</span></div></article>
+    <article class="skill glass tilt reveal"><h3>Development &amp; workflow</h3><div class="tags"><span>Node.js (Koa)</span><span>RESTful APIs</span><span>Android</span><span>CircleCI</span><span>macOS · zsh</span><span>Tmux</span><span>NeoVim</span><span>chezmoi</span><span>Claude Code</span></div></article>
+  </div>
+</section>
+
+<!-- Certifications & community -->
+<section id="credentials" class="sec">
+  <h2 class="title reveal">Certifications &amp; community</h2>
+  <div class="cards">
+    <div class="card glass tilt reveal"><b>2025</b><h3>Vault Associate (003)</h3><span>HashiCorp</span></div>
+    <div class="card glass tilt reveal"><b>2024</b><h3>Terraform Authoring and Operations Professional</h3><span>HashiCorp</span></div>
+    <div class="card glass tilt reveal"><b>2024</b><h3>Consul Associate (003)</h3><span>HashiCorp</span></div>
+    <div class="card glass tilt reveal"><b>2023</b><h3>Terraform Associate (003)</h3><span>HashiCorp</span></div>
+    <div class="card glass tilt reveal"><b>2023</b><h3>Advanced Networking – Specialty</h3><span>Amazon Web Services</span></div>
+    <div class="card glass tilt reveal"><b>2022</b><h3>Security – Specialty</h3><span>Amazon Web Services</span></div>
+    <div class="card glass tilt reveal"><b>2022</b><h3>Solutions Architect – Professional</h3><span>Amazon Web Services</span></div>
+    <div class="card glass tilt reveal"><b>2021</b><h3>SysOps Administrator – Associate</h3><span>Amazon Web Services</span></div>
+    <div class="card glass tilt reveal"><b>2020</b><h3>Certified Kubernetes Application Developer (CKAD)</h3><span>The Linux Foundation</span></div>
+  </div>
+  <h3 class="subtitle reveal">Community</h3>
+  <ul class="comm">
+    <li class="glass reveal"><b>2022 – present</b> AWS Community Builder (Container), Amazon Web Services</li>
+    <li class="glass reveal"><b>2022 – present</b> HashiCorp Ambassador, HashiCorp</li>
+    <li class="glass reveal"><b>2018 – present</b> Organizer of HashiCorp Korea User Group, HashiCorp</li>
+  </ul>
+</section>
+
+<!-- Awards -->
+<section id="awards" class="sec">
+  <h2 class="title reveal">Honors &amp; awards</h2>
+  <div class="award-grid">
+    <div class="reveal">
+      <h3 class="subtitle">International</h3>
+      <ul class="awards">
+        <li><b>2021</b> 2nd Place, AWS ASEAN AI/ML GameDay Online</li>
+        <li><b>2020</b> Finalist, DEFCON 28 CTF World Final, Las Vegas, U.S.A</li>
+        <li><b>2018</b> Finalist, DEFCON 26 CTF World Final, Las Vegas, U.S.A</li>
+        <li><b>2017</b> Finalist, DEFCON 25 CTF World Final, Las Vegas, U.S.A</li>
+        <li><b>2014</b> Finalist, DEFCON 22 CTF World Final, Las Vegas, U.S.A</li>
+        <li><b>2013</b> Finalist, DEFCON 21 CTF World Final, Las Vegas, U.S.A</li>
+        <li><b>2011</b> Finalist, DEFCON 19 CTF World Final, Las Vegas, U.S.A</li>
+      </ul></div>
+    <div class="reveal">
+      <h3 class="subtitle">Domestic</h3>
+      <ul class="awards">
+        <li><b>2021</b> 2nd Place, AWS Korea GameDay, Seoul</li>
+        <li><b>2017</b> Silver Prize, KISA HDCON Hacking Competition Final, Seoul</li>
+        <li><b>2015</b> 3rd Place, WITHCON Hacking Competition Final, Seoul</li>
+        <li><b>2013</b> Silver Prize, KISA HDCON Hacking Competition Final, Seoul</li>
+      </ul></div>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="sec">
+  <h2 class="title reveal">Education</h2>
+  <div class="edu glass tilt reveal">
+    <span class="when mono">Mar. 2010 – Aug. 2017</span>
+    <h3>POSTECH (Pohang University of Science and Technology)</h3>
+    <p>B.S. in Computer Science and Engineering · Pohang, S.Korea</p>
+    <p class="note">Awarded the Chun Shin-Il Scholarship, given to promising students in the CSE Department.</p>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="sec contact">
+  <h2 class="title reveal">Let's talk</h2>
+  <p class="sub reveal">Open to conversations about high-impact roles at fast-growing start-ups, and to technical advisory work.</p>
+  <div class="contact-grid">
+    <a class="glass tilt reveal" href="mailto:posquit0.bj@gmail.com"><span>Email</span><b>posquit0.bj@gmail.com</b></a>
+    <a class="glass tilt reveal" href="tel:+821090301843"><span>Phone</span><b>(+82) 10-9030-1843</b></a>
+    <a class="glass tilt reveal" href="https://www.posquit0.com" target="_blank" rel="noopener"><span>Homepage</span><b>www.posquit0.com</b></a>
+    <a class="glass tilt reveal" href="https://github.com/posquit0" target="_blank" rel="noopener"><span>GitHub</span><b>@posquit0</b></a>
+    <a class="glass tilt reveal" href="https://www.linkedin.com/in/posquit0" target="_blank" rel="noopener"><span>LinkedIn</span><b>/in/posquit0</b></a>
+    <div class="glass tilt reveal"><span>Location</span><b>Mapo-gu, Seoul, Republic of Korea</b></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot"><p>© <span id="year"></span> Byungjin Park · Built from my résumé.</p><button id="top" class="btn ghost" aria-label="Back to top">Back to top</button></footer>
+<script src="script.js"></script>
+</body>
+</html>
